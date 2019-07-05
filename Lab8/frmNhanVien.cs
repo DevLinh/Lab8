@@ -38,7 +38,6 @@ namespace Lab8
             btnXoa.Enabled = val;
             btnSua.Enabled = val;
             btnThoat.Enabled = val;
-            btnXoa.Enabled = val;
             btnLuu.Enabled = !val;
             btnHuy.Enabled = !val;
         }
@@ -184,6 +183,7 @@ namespace Lab8
             }
             HienThiNhanVien();
             setNull();
+            setButton(true);
         }
     }
 }

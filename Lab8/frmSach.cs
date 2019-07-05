@@ -191,6 +191,7 @@ namespace Lab8
             }
             HienThiSach();
             setNull();
+            setButton(true);
         }
     }
 }

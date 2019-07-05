@@ -47,13 +47,13 @@
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.dgvNhanVien = new System.Windows.Forms.DataGridView();
-            this.label6 = new System.Windows.Forms.Label();
             this.MaNhanVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HoTenNhanVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NgaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DienThoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenBangCap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label6 = new System.Windows.Forms.Label();
             this.gbInf.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
@@ -270,16 +270,6 @@
             this.dgvNhanVien.TabIndex = 4;
             this.dgvNhanVien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvNhanVien_CellClick);
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Bookman Old Style", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(281, 9);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(273, 28);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "QUẢN LÝ NHÂN VIÊN";
-            // 
             // MaNhanVien
             // 
             this.MaNhanVien.DataPropertyName = "MaNhanVien";
@@ -320,6 +310,16 @@
             this.TenBangCap.DataPropertyName = "TenBangCap";
             this.TenBangCap.HeaderText = "Bằng Cấp";
             this.TenBangCap.Name = "TenBangCap";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Bookman Old Style", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(281, 9);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(273, 28);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "QUẢN LÝ NHÂN VIÊN";
             // 
             // frmNhanVien
             // 
