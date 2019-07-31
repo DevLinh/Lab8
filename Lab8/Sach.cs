@@ -28,15 +28,15 @@ namespace Lab8
             db.ExecuteNonQuery(sqlStr);
         }
 
-        public void ThemSach(string ten, string tacgia, int namxb, string nxb, float trigia, string ngay)
+        public void ThemSach(string ma, string ten, string tacgia, int namxb, string nxb, float trigia, string ngay)
         {
-            string sqlStr = string.Format("INSERT INTO SACH VALUES (N'{0}', N'{1}', {2}, N'{3}', {4}, '{5}')", ten, tacgia, namxb, nxb, trigia, ngay);
+            string sqlStr = string.Format("INSERT INTO SACH VALUES ('{0}',N'{1}', N'{2}', {3}, N'{4}', {5}, '{6}')",ma, ten, tacgia, namxb, nxb, trigia, ngay);
             db.ExecuteNonQuery(sqlStr);
         }
 
-        public void CapNhatSach(string index_s, string tensach, string tacgia, int namxb, string nxb, float trigia, string ngay)
+        public void CapNhatSach(string ma, string tensach, string tacgia, int namxb, string nxb, float trigia, string ngay)
         {
-            string sqlStr = string.Format("UPDATE SACH SET TenSach = N'{0}', TacGia = N'{1}', NamXuatBan = {2}, NhaXuatBan = N'{3}', TriGia = {4} , NgayNhap = '{5}' WHERE MaSach = {6}", tensach, tacgia, namxb, nxb, trigia, ngay, index_s);
+            string sqlStr = string.Format("UPDATE SACH SET TenSach = N'{0}', TacGia = N'{1}', NamXuatBan = {2}, NhaXuatBan = N'{3}', TriGia = {4} , NgayNhap = '{5}' WHERE MaSach = {6}", tensach, tacgia, namxb, nxb, trigia, ngay, ma);
             db.ExecuteNonQuery(sqlStr);
         }
     }

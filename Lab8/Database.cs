@@ -10,16 +10,18 @@ namespace Lab8
 {
     class Database
     {
-        SqlConnection sqlConn; // Khởi tạo đối tượng kết nối DB SqlConnection trong thư viện SqlClient
+        public SqlConnection sqlConn; // Khởi tạo đối tượng kết nối DB SqlConnection trong thư viện SqlClient
         SqlDataAdapter da; // Khởi tạo bộ điều phối dữ liệu (Data Adapter)
         DataSet ds; // Khởi tạo đói tượng chứa dữ liệu khi giao tiếp trong thư viện Data
 
         // Khởi tạo Constuctor Database tạo lập kết nối
         public string srvName = "VIVOBOOKS\\SQLEXPRESS"; // Chỉ định tên Server
-        public string dbName = "QLTHUVIEN"; // Chỉ định tên DB
+        public string dbName = "QLTHUVIEN_DOAN"; // Chỉ định tên DB
+        public string dbUID = "sa";
+        public string dbPWD = "123den89";
         public Database()
         {
-            string strConn = "Data source=" + srvName + ";database=" + dbName + ";Integrated Security = True";
+            string strConn = "Data source=" + srvName + ";database=" + dbName + ";uid=" + dbUID + ";pwd = " + dbPWD + ";";
             sqlConn = new SqlConnection(strConn);
         }
 

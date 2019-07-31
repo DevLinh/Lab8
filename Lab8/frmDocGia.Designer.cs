@@ -300,7 +300,6 @@
             this.MaDocGia.DataPropertyName = "MaDocGia";
             this.MaDocGia.HeaderText = "Mã đọc giả";
             this.MaDocGia.Name = "MaDocGia";
-            this.MaDocGia.Visible = false;
             // 
             // HoTenDocGia
             // 
@@ -351,7 +350,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(918, 563);
+            this.ClientSize = new System.Drawing.Size(967, 635);
             this.Controls.Add(this.dgvDocGia);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
